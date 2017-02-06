@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>18</ColumnWidth0><ColumnWidth1>1223</ColumnWidth1></Debug-Log>
+      <Build>
+        <ColumnWidth0>18</ColumnWidth0>
+        <ColumnWidth1>917</ColumnWidth1>
+        <ColumnWidth2>244</ColumnWidth2>
+        <ColumnWidth3>61</ColumnWidth3>
+      </Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>82</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        
+        
+        
+      <MixedMode>1</MixedMode><CodeCovShow>1</CodeCovShow><InstrProfShow>1</InstrProfShow></Disassembly>
+    </Static>
+    <Windows>
+      
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-31835-30460</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-31312-30469</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-9815-30463</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>contiki</ExpandedNode><ExpandedNode>contiki/contiki</ExpandedNode><ExpandedNode>contiki/contiki/cpu</ExpandedNode><ExpandedNode>contiki/platform</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-20564-30466</Identity>
+            <TabName>Disassembly</TabName>
+            <Factory>Disassembly</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\contiki-main.c</Filename><XPos>0</XPos><YPos>51</YPos><SelStart>1077</SelStart><SelEnd>1077</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\contiki-3.0\core\sys\autostart.c</Filename><XPos>0</XPos><YPos>31</YPos><SelStart>1891</SelStart><SelEnd>1891</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\contiki-3.0\core\sys\process.h</Filename><XPos>0</XPos><YPos>104</YPos><SelStart>3693</SelStart><SelEnd>3701</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\contiki-3.0\core\sys\pt.h</Filename><XPos>0</XPos><YPos>293</YPos><SelStart>7629</SelStart><SelEnd>7629</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\contiki-3.0\core\sys\process.c</Filename><XPos>0</XPos><YPos>229</YPos><SelStart>6997</SelStart><SelEnd>6997</SelEnd></Tab><ActiveTab>4</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\contiki-3.0\core\sys\clock.h</Filename><XPos>0</XPos><YPos>61</YPos><SelStart>3123</SelStart><SelEnd>3140</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\contiki-conf.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>420</SelStart><SelEnd>420</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\StdPeriph_Driver\src\stm32f10x_gpio.c</Filename><XPos>0</XPos><YPos>342</YPos><SelStart>10837</SelStart><SelEnd>10860</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\contiki-3.0\core\sys\autostart.h</Filename><XPos>0</XPos><YPos>31</YPos><SelStart>1926</SelStart><SelEnd>1926</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-020b0f40><key>iaridepm.enu1</key></Toolbar-020b0f40></Sizes></Row0><Row1><Sizes><Toolbar-07df6ef8><key>debuggergui.enu1</key></Toolbar-07df6ef8></Sizes></Row1><Row2><Sizes><Toolbar-07df6980><key>armjlink.enu1</key></Toolbar-07df6980></Sizes></Row2></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>472</Bottom><Right>156</Right><x>-2</x><y>-2</y><xscreen>158</xscreen><yscreen>122</yscreen><sizeHorzCX>115666</sizeHorzCX><sizeHorzCY>178102</sizeHorzCY><sizeVertCX>115666</sizeVertCX><sizeVertCY>691971</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>472</Bottom><Right>156</Right><x>-2</x><y>-2</y><xscreen>158</xscreen><yscreen>122</yscreen><sizeHorzCX>115666</sizeHorzCX><sizeHorzCY>178102</sizeHorzCY><sizeVertCX>115666</sizeVertCX><sizeVertCY>691971</sizeVertCY></Rect></Wnd2></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>120</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>122</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>178102</sizeHorzCY><sizeVertCX>115666</sizeVertCX><sizeVertCY>178102</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+

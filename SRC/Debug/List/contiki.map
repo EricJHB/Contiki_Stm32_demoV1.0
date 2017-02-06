@@ -1,0 +1,649 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V5.50.5.51995/W32 for ARM              23/Jan/2017  13:17:30 #
+# Copyright (C) 2007-2010 IAR Systems AB.                                     #
+#                                                                             #
+#    Output file  =  E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Exe\contiki.out                 #
+#    Map file     =  E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\List\contiki.map                #
+#    Command line =  E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\autostart.o                 #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\clock.o                     #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\contiki-main.o              #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\core_cm3.o                  #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\debug-uart.o                #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\etimer.o                    #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\misc.o                      #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\process-post-isr-test.o     #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\process.o                   #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\processtest.o               #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\procinit.o                  #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\startup_stm32f10x_md.o      #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\stm32f10x_gpio.o            #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\stm32f10x_it.o              #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\stm32f10x_rcc.o             #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\stm32f10x_usart.o           #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\system_stm32f10x.o          #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Obj\timer.o -o                  #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\Exe\contiki.out --map           #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Debug\List\contiki.map --config       #
+#                    E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiS #
+#                    tm32_demoV1.1_test\Linker\stm32f10x_flash --semihosting  #
+#                    --entry __iar_program_start                              #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x080fffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20017fff] {
+          rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xec
+  .intvec            ro code  0x08000000    0xec  startup_stm32f10x_md.o [1]
+                            - 0x080000ec    0xec
+
+"P1":                                     0x33bd
+  .text              ro code  0x080000ec   0xff2  xprintffull.o [3]
+  .text              ro code  0x080010e0   0x3d4  process.o [1]
+  .text              ro code  0x080014b4   0x246  DblDiv.o [4]
+  .text              ro code  0x080016fc   0x1cc  etimer.o [1]
+  .text              ro code  0x080018c8   0x1c0  stm32f10x_usart.o [1]
+  .text              ro code  0x08001a88   0x1a2  DblMul.o [4]
+  .text              ro code  0x08001c2c   0x17e  DblSub.o [4]
+  .text              ro code  0x08001dac   0x158  system_stm32f10x.o [1]
+  .text              ro code  0x08001f04   0x12e  I64DivMod.o [4]
+  .text              ro code  0x08002034   0x108  xdscale.o [3]
+  .text              ro code  0x0800213c   0x100  stm32f10x_rcc.o [1]
+  .text              ro code  0x0800223c    0xe6  DblAdd.o [4]
+  .text              ro code  0x08002324    0xd8  clock.o [1]
+  .text              ro code  0x080023fc    0xd8  debug-uart.o [1]
+  .text              ro code  0x080024d4    0xd8  stm32f10x_gpio.o [1]
+  .text              ro code  0x080025ac    0xc6  xdnorm.o [3]
+  .text              ro code  0x08002674    0xbc  xxmemxmalloc.o [3]
+  .text              ro code  0x08002730    0xa8  packbits_init3.o [4]
+  .text              ro code  0x080027d8    0x9c  processtest.o [1]
+  .text              ro code  0x08002874    0x8c  process-post-isr-test.o [1]
+  .text              ro code  0x08002900    0x88  xxmemxfree.o [3]
+  .text              ro code  0x08002988    0x88  xsyslock.o [3]
+  .text              ro code  0x08002a10    0x84  misc.o [1]
+  .text              ro code  0x08002a94    0x80  contiki-main.o [1]
+  .text              ro code  0x08002b14    0x70  ABImemcpy.o [4]
+  .text              ro code  0x08002b84    0x70  cppinit.o [3]
+  .text              ro code  0x08002bf4    0x58  memchr.o [4]
+  .text              ro code  0x08002c4c    0x56  DblToI32.o [4]
+  .text              ro code  0x08002ca4    0x50  xencoding_sb.o [3]
+  .rodata            const    0x08002cf4    0x4c  process.o [1]
+  .rodata            const    0x08002d40    0x48  process.o [1]
+  .rodata            const    0x08002d88    0x48  process.o [1]
+  .rodata            const    0x08002dd0    0x48  process.o [1]
+  .text              ro code  0x08002e18    0x48  MtxWrapper.o [3]
+  .text              ro code  0x08002e60    0x36  strlen.o [4]
+  .rodata            const    0x08002e98    0x34  process.o [1]
+  .rodata            const    0x08002ecc    0x30  process.o [1]
+  .text              ro code  0x08002efc    0x30  autostart.o [1]
+  .text              ro code  0x08002f2c    0x30  iarttio.o [5]
+  .text              ro code  0x08002f5c    0x2e  DblCmpLe.o [4]
+  .text              ro code  0x08002f8c    0x2e  DblCmpGe.o [4]
+  .text              ro code  0x08002fbc    0x2e  I32ToDbl.o [4]
+  .text              ro code  0x08002fec    0x2c  data_init3.o [4]
+  .text              ro code  0x08003018    0x2c  timer.o [1]
+  .rodata            const    0x08003044    0x28  autostart.o [1]
+  .text              ro code  0x0800306c    0x28  xgetmemchunk.o [3]
+  .text              ro code  0x08003094    0x24  zero_init3.o [4]
+  .iar.init_table    const    0x080030b8    0x2c  - Linker created -
+  .text              ro code  0x080030e4    0x20  printf.o [3]
+  .text              ro code  0x08003104    0x20  xmbtowc.o [3]
+  .rodata            const    0x08003124    0x1c  process.o [1]
+  .text              ro code  0x08003140    0x1a  xwctomb.o [3]
+  .rodata            const    0x0800315c    0x18  process.o [1]
+  .text              ro code  0x08003174    0x16  cmain.o [4]
+  .text              ro code  0x0800318c    0x16  strchr.o [4]
+  .text              ro code  0x080031a2    0x16  xprout.o [3]
+  .rodata            const    0x080031b8    0x14  contiki-main.o [1]
+  .text              ro code  0x080031cc    0x14  localeconv.o [3]
+  .text              ro code  0x080031e0    0x14  setlocale.o [3]
+  .text              ro code  0x080031f4    0x14  exit.o [5]
+  .rodata            const    0x08003208    0x10  contiki-main.o [1]
+  .rodata            const    0x08003218    0x10  process-post-isr-test.o [1]
+  .rodata            const    0x08003228    0x10  xprintffull.o [3]
+  .text              ro code  0x08003238    0x10  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003248    0x10  stm32f10x_it.o [1]
+  .text              ro code  0x08003258     0xe  cexit.o [4]
+  .text              ro code  0x08003266     0xe  div.o [3]
+  .rodata            const    0x08003274     0xc  contiki-main.o [1]
+  .rodata            const    0x08003280     0xc  etimer.o [1]
+  .rodata            const    0x0800328c     0xc  process.o [1]
+  .rodata            const    0x08003298     0xc  processtest.o [1]
+  .rodata            const    0x080032a4     0xc  processtest.o [1]
+  .text              ro code  0x080032b0     0xc  putchar.o [3]
+  .text              ro code  0x080032bc     0xc  cstartup_M.o [4]
+  .text              ro code  0x080032c8     0xa  xmbcurmax.o [3]
+  .rodata            const    0x080032d4     0x8  process-post-isr-test.o [1]
+  .rodata            const    0x080032dc     0x8  processtest.o [1]
+  .rodata            const    0x080032e4     0x8  xprintffull.o [3]
+  .rodata            const    0x080032ec     0x8  localeconv.o [3]
+  .rodata            const    0x080032f4     0x8  localeconv.o [3]
+  .rodata            const    0x080032fc     0x8  xencoding_sb.o [3]
+  .rodata            const    0x08003304     0x8  xencoding_sb.o [3]
+  .text              ro code  0x0800330c     0x8  XShttio.o [3]
+  .text              ro code  0x08003314     0x6  exit.o [3]
+  .text              ro code  0x0800331c     0x2  I64DivZer.o [4]
+  .text              ro code  0x0800331e     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003322     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003326     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800332a     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800332e     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003332     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003336     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800333a     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800333e     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003342     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003346     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800334a     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800334e     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003352     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003356     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800335a     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800335e     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003362     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003366     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800336a     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800336e     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003372     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003376     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800337a     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800337e     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003382     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003386     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800338a     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800338e     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003392     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08003396     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800339a     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x0800339e     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033a2     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033a6     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033aa     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033ae     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033b2     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033b6     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033ba     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033be     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033c2     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033c6     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033ca     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033ce     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033d2     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033d6     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033da     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033de     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033e2     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033e6     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033ea     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x080033ee     0x4  low_level_init.o [3]
+  .rodata            const    0x080033f2     0x2  localeconv.o [3]
+  .rodata            const    0x080033f4     0x1  localeconv.o [3]
+  .rodata            const    0x080033f5     0x1  setlocale.o [3]
+  Initializer bytes  ro data  0x080033f6    0xb3  <for P2 s0>
+                            - 0x080034a9  0x33bd
+
+"P2", part 1 of 3:                         0x7ec
+  CSTACK                      0x20000000   0x400  <Block>
+    CSTACK           uninit   0x20000000   0x400  <Block tail>
+  HEAP                        0x20000400   0x200  <Block>
+    HEAP             uninit   0x20000400   0x200  <Block tail>
+  .iar.dynexit                0x20000600   0x1ec  <Block>
+    .iar.dynexit     uninit   0x20000600     0xc  cppinit.o [3]
+    .iar.dynexit     uninit   0x2000060c   0x1e0  <Block tail>
+                            - 0x200007ec   0x7ec
+
+"P2", part 2 of 3:                         0x160
+  P2 s0                       0x200007ec   0x160  <Init block>
+    .data            inited   0x200007ec    0x80  setlocale.o [3]
+    .data            inited   0x2000086c    0x4c  localeconv.o [3]
+    .data            inited   0x200008b8    0x40  xfiles.o [3]
+    .data            inited   0x200008f8    0x10  etimer.o [1]
+    .data            inited   0x20000908    0x10  process-post-isr-test.o [1]
+    .data            inited   0x20000918    0x10  processtest.o [1]
+    .data            inited   0x20000928    0x10  stm32f10x_rcc.o [1]
+    .data            inited   0x20000938     0x8  XShttio.o [3]
+    .data            inited   0x20000940     0x4  clock.o [1]
+    .data            inited   0x20000944     0x4  stm32f10x_rcc.o [1]
+    .data            inited   0x20000948     0x4  system_stm32f10x.o [1]
+                            - 0x2000094c   0x160
+
+"P2", part 3 of 3:                         0x248
+  .bss               zero     0x2000094c   0x180  process.o [1]
+  .bss               zero     0x20000acc    0x50  xfiles.o [3]
+  .bss               zero     0x20000b1c    0x14  xsyslock.o [3]
+  .bss               zero     0x20000b30    0x10  processtest.o [1]
+  .bss               zero     0x20000b40     0x8  xxmemxmalloc.o [3]
+  .bss               zero     0x20000b48     0x4  clock.o [1]
+  .bss               zero     0x20000b4c     0x4  clock.o [1]
+  .bss               zero     0x20000b50     0x4  contiki-main.o [1]
+  .bss               zero     0x20000b54     0x4  etimer.o [1]
+  .bss               zero     0x20000b58     0x4  etimer.o [1]
+  .bss               zero     0x20000b5c     0x4  process-post-isr-test.o [1]
+  .bss               zero     0x20000b60     0x4  process.o [1]
+  .bss               zero     0x20000b64     0x4  process.o [1]
+  .bss               zero     0x20000b68     0x4  process.o [1]
+  .bss               zero     0x20000b6c     0x4  process.o [1]
+  .bss               zero     0x20000b70     0x4  process.o [1]
+  .bss               zero     0x20000b74     0x4  xgetmemchunk.o [3]
+  .bss               zero     0x20000b78     0x4  cppinit.o [3]
+  .bss               zero     0x20000b7c     0x4  MtxWrapper.o [3]
+  .bss               zero     0x20000b80     0x4  MtxWrapper.o [3]
+  .bss               zero     0x20000b84     0x4  MtxWrapper.o [3]
+  .bss               zero     0x20000b88     0x4  MtxWrapper.o [3]
+  .bss               zero     0x20000b8c     0x1  process-post-isr-test.o [1]
+  .bss               zero     0x20000b8d     0x1  process.o [1]
+  .bss               zero     0x20000b8e     0x1  process.o [1]
+  .bss               zero     0x20000b8f     0x1  process.o [1]
+  .bss               zero     0x20000b90     0x1  process.o [1]
+  .bss               zero     0x20000b91     0x1  process.o [1]
+  .bss               zero     0x20000b92     0x1  process.o [1]
+                            - 0x20000b93   0x247
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x247:
+          0x2000094c  0x247
+
+Copy/packbits (__iar_packbits_init3)
+    1 source range, total size 0xb3 (50% of destination):
+          0x080033f6   0xb3
+    1 destination range, total size 0x160:
+          0x200007ec  0x160
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                   ro code  ro data  rw data
+    ------                   -------  -------  -------
+E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiStm32_demoV1.1_test\Debug\Obj: [1]
+    autostart.o                   48       40
+    clock.o                      216        2       12
+    contiki-main.o               128       48        4
+    debug-uart.o                 216
+    etimer.o                     460       20       24
+    misc.o                       132
+    process-post-isr-test.o      140       32       21
+    process.o                    980      456      410
+    processtest.o                156       40       32
+    startup_stm32f10x_md.o       460
+    stm32f10x_gpio.o             216
+    stm32f10x_it.o                16
+    stm32f10x_rcc.o              256       10       20
+    stm32f10x_usart.o            448
+    system_stm32f10x.o           344        3        4
+    timer.o                       44
+    --------------------------------------------------
+    Total:                     4 260      651      527
+
+command line: [2]
+    --------------------------------------------------
+    Total:
+
+dl7M_tl_if.a: [3]
+    MtxWrapper.o                  72                16
+    XShttio.o                      8        4        8
+    cppinit.o                    112                16
+    div.o                         14
+    exit.o                         6
+    localeconv.o                  20       57       76
+    low_level_init.o               4
+    printf.o                      32
+    putchar.o                     12
+    setlocale.o                   20       66      128
+    xdnorm.o                     198
+    xdscale.o                    264
+    xencoding_sb.o                80       16
+    xfiles.o                               33      144
+    xgetmemchunk.o                40                 4
+    xmbcurmax.o                   10
+    xmbtowc.o                     32
+    xprintffull.o              4 082       24
+    xprout.o                      22
+    xsyslock.o                   136                20
+    xwctomb.o                     26
+    xxmemxfree.o                 136
+    xxmemxmalloc.o               188                 8
+    --------------------------------------------------
+    Total:                     5 514      200      420
+
+rt7M_tl.a: [4]
+    ABImemcpy.o                  112
+    DblAdd.o                     230
+    DblCmpGe.o                    46
+    DblCmpLe.o                    46
+    DblDiv.o                     582
+    DblMul.o                     418
+    DblSub.o                     382
+    DblToI32.o                    86
+    I32ToDbl.o                    46
+    I64DivMod.o                  302
+    I64DivZer.o                    2
+    cexit.o                       14
+    cmain.o                       22
+    cstartup_M.o                  12
+    data_init3.o                  44
+    memchr.o                      88
+    packbits_init3.o             168
+    strchr.o                      22
+    strlen.o                      54
+    zero_init3.o                  36
+    --------------------------------------------------
+    Total:                     2 712
+
+shb_l.a: [5]
+    exit.o                        20
+    iarttio.o                     48
+    --------------------------------------------------
+    Total:                        68
+
+    Gaps                          26        6
+    Linker created                         44    2 016
+------------------------------------------------------
+    Grand Total:              12 580      901    2 963
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.dynexit$$Base      0x20000600          --   Gb  - Linker created -
+.iar.dynexit$$Limit     0x200007ec          --   Gb  - Linker created -
+?main                   0x08003175         Code  Gb  cmain.o [4]
+ADC1_2_IRQHandler       0x0800338b         Code  Wk  startup_stm32f10x_md.o [1]
+ADCPrescTable           0x20000944    0x4  Data  Lc  stm32f10x_rcc.o [1]
+APBAHBPrescTable        0x20000928   0x10  Data  Lc  stm32f10x_rcc.o [1]
+BusFault_Handler        0x0800324f    0x2  Code  Gb  stm32f10x_it.o [1]
+CAN1_RX1_IRQHandler     0x08003397         Code  Wk  startup_stm32f10x_md.o [1]
+CAN1_SCE_IRQHandler     0x0800339b         Code  Wk  startup_stm32f10x_md.o [1]
+CSTACK$$Base            0x20000000          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000400          --   Gb  - Linker created -
+DMA1_Channel1_IRQHandler
+                        0x0800336f         Code  Wk  startup_stm32f10x_md.o [1]
+DMA1_Channel2_IRQHandler
+                        0x08003373         Code  Wk  startup_stm32f10x_md.o [1]
+DMA1_Channel3_IRQHandler
+                        0x08003377         Code  Wk  startup_stm32f10x_md.o [1]
+DMA1_Channel4_IRQHandler
+                        0x0800337b         Code  Wk  startup_stm32f10x_md.o [1]
+DMA1_Channel5_IRQHandler
+                        0x0800337f         Code  Wk  startup_stm32f10x_md.o [1]
+DMA1_Channel6_IRQHandler
+                        0x08003383         Code  Wk  startup_stm32f10x_md.o [1]
+DMA1_Channel7_IRQHandler
+                        0x08003387         Code  Wk  startup_stm32f10x_md.o [1]
+DebugMon_Handler        0x08003255    0x2  Code  Gb  stm32f10x_it.o [1]
+DtorRecArray            0x20000600    0xc  Data  Lc  cppinit.o [3]
+EXTI0_IRQHandler        0x0800335b         Code  Wk  startup_stm32f10x_md.o [1]
+EXTI15_10_IRQHandler    0x080033e3         Code  Wk  startup_stm32f10x_md.o [1]
+EXTI1_IRQHandler        0x0800335f         Code  Wk  startup_stm32f10x_md.o [1]
+EXTI2_IRQHandler        0x08003363         Code  Wk  startup_stm32f10x_md.o [1]
+EXTI3_IRQHandler        0x08003367         Code  Wk  startup_stm32f10x_md.o [1]
+EXTI4_IRQHandler        0x0800336b         Code  Wk  startup_stm32f10x_md.o [1]
+EXTI9_5_IRQHandler      0x0800339f         Code  Wk  startup_stm32f10x_md.o [1]
+FLASH_IRQHandler        0x08003353         Code  Wk  startup_stm32f10x_md.o [1]
+GPIO_Init               0x080024d5   0xcc  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ResetBits          0x080025a7    0x6  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_SetBits            0x080025a1    0x6  Code  Gb  stm32f10x_gpio.o [1]
+HEAP$$Base              0x20000400          --   Gb  - Linker created -
+HEAP$$Limit             0x20000600          --   Gb  - Linker created -
+HardFault_Handler       0x0800324b    0x2  Code  Gb  stm32f10x_it.o [1]
+I2C1_ER_IRQHandler      0x080033c3         Code  Wk  startup_stm32f10x_md.o [1]
+I2C1_EV_IRQHandler      0x080033bf         Code  Wk  startup_stm32f10x_md.o [1]
+I2C2_ER_IRQHandler      0x080033cb         Code  Wk  startup_stm32f10x_md.o [1]
+I2C2_EV_IRQHandler      0x080033c7         Code  Wk  startup_stm32f10x_md.o [1]
+MemManage_Handler       0x0800324d    0x2  Code  Gb  stm32f10x_it.o [1]
+NMI_Handler             0x08003249    0x2  Code  Gb  stm32f10x_it.o [1]
+NVIC_Init               0x08002a1b   0x66  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                        0x08002a11    0xa  Code  Gb  misc.o [1]
+NVIC_SetPriority        0x08002325   0x22  Code  Lc  clock.o [1]
+PVD_IRQHandler          0x08003347         Code  Wk  startup_stm32f10x_md.o [1]
+PendSV_Handler          0x08003257    0x2  Code  Gb  stm32f10x_it.o [1]
+RCC_APB2PeriphClockCmd  0x080021fd   0x20  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetClocksFreq       0x0800213d   0xc0  Code  Gb  stm32f10x_rcc.o [1]
+RCC_IRQHandler          0x08003357         Code  Wk  startup_stm32f10x_md.o [1]
+RTCAlarm_IRQHandler     0x080033e7         Code  Wk  startup_stm32f10x_md.o [1]
+RTC_IRQHandler          0x0800334f         Code  Wk  startup_stm32f10x_md.o [1]
+Region$$Table$$Base     0x080030b8          --   Gb  - Linker created -
+Region$$Table$$Limit    0x080030e4          --   Gb  - Linker created -
+Reset_Handler           0x08003239         Code  Wk  startup_stm32f10x_md.o [1]
+SPI1_IRQHandler         0x080033cf         Code  Wk  startup_stm32f10x_md.o [1]
+SPI2_IRQHandler         0x080033d3         Code  Wk  startup_stm32f10x_md.o [1]
+SVC_Handler             0x08003253    0x2  Code  Gb  stm32f10x_it.o [1]
+SetSysClock             0x08001dff    0x8  Code  Lc  system_stm32f10x.o [1]
+SetSysClockTo72         0x08001e07   0xe0  Code  Lc  system_stm32f10x.o [1]
+SysTick_Config          0x08002347   0x30  Code  Lc  clock.o [1]
+SysTick_Handler         0x08002377   0x44  Code  Gb  clock.o [1]
+SystemCoreClock         0x20000948    0x4  Data  Gb  system_stm32f10x.o [1]
+SystemInit              0x08001dad   0x52  Code  Gb  system_stm32f10x.o [1]
+TAMPER_IRQHandler       0x0800334b         Code  Wk  startup_stm32f10x_md.o [1]
+TIM1_BRK_IRQHandler     0x080033a3         Code  Wk  startup_stm32f10x_md.o [1]
+TIM1_CC_IRQHandler      0x080033af         Code  Wk  startup_stm32f10x_md.o [1]
+TIM1_TRG_COM_IRQHandler
+                        0x080033ab         Code  Wk  startup_stm32f10x_md.o [1]
+TIM1_UP_IRQHandler      0x080033a7         Code  Wk  startup_stm32f10x_md.o [1]
+TIM2_IRQHandler         0x080033b3         Code  Wk  startup_stm32f10x_md.o [1]
+TIM3_IRQHandler         0x080033b7         Code  Wk  startup_stm32f10x_md.o [1]
+TIM4_IRQHandler         0x080033bb         Code  Wk  startup_stm32f10x_md.o [1]
+USART1_IRQHandler       0x080028bb   0x32  Code  Gb  process-post-isr-test.o [1]
+USART2_IRQHandler       0x080033db         Code  Wk  startup_stm32f10x_md.o [1]
+USART3_IRQHandler       0x080033df         Code  Wk  startup_stm32f10x_md.o [1]
+USART_Cmd               0x0800198d   0x1a  Code  Gb  stm32f10x_usart.o [1]
+USART_GetFlagStatus     0x08001a09   0x1c  Code  Gb  stm32f10x_usart.o [1]
+USART_GetITStatus       0x08001a25   0x64  Code  Gb  stm32f10x_usart.o [1]
+USART_ITConfig          0x080019a7   0x52  Code  Gb  stm32f10x_usart.o [1]
+USART_Init              0x080018c9   0xbe  Code  Gb  stm32f10x_usart.o [1]
+USART_ReceiveData       0x08001a01    0x8  Code  Gb  stm32f10x_usart.o [1]
+USART_SendData          0x080019f9    0x8  Code  Gb  stm32f10x_usart.o [1]
+USBWakeUp_IRQHandler    0x080033eb         Code  Wk  startup_stm32f10x_md.o [1]
+USB_HP_CAN1_TX_IRQHandler
+                        0x0800338f         Code  Wk  startup_stm32f10x_md.o [1]
+USB_LP_CAN1_RX0_IRQHandler
+                        0x08003393         Code  Wk  startup_stm32f10x_md.o [1]
+UsageFault_Handler      0x08003251    0x2  Code  Gb  stm32f10x_it.o [1]
+WWDG_IRQHandler         0x08003343         Code  Wk  startup_stm32f10x_md.o [1]
+_EncodingSb_Mbtowc      0x08002cbf   0x2e  Code  Gb  xencoding_sb.o [3]
+_EncodingSb_Wctomb      0x08002ca5   0x1a  Code  Gb  xencoding_sb.o [3]
+_GenldDefault           0x08000e3d  0x258  Code  Lc  xprintffull.o [3]
+_IsdstStr               0x20000810    0x4  Data  Gb  setlocale.o [3]
+_LdtobDefault           0x08000a1d  0x412  Code  Lc  xprintffull.o [3]
+_LitobDefault           0x0800090f  0x10e  Code  Lc  xprintffull.o [3]
+_LocaleEncoding         0x080031e1   0x10  Code  Gb  setlocale.o [3]
+_LocaleReturnString     0x2000081c   0x50  Data  Lc  setlocale.o [3]
+_Locale_Profile         0x200007ec   0x1c  Data  Gb  setlocale.o [3]
+_Locale_lconv           0x20000870   0x48  Data  Gb  localeconv.o [3]
+_Mbtowc                 0x08003105   0x20  Code  Gb  xmbtowc.o [3]
+_Printf                 0x080000ed  0x588  Code  Gb  xprintffull.o [3]
+_Prout                  0x080031a3   0x16  Code  Gb  xprout.o [3]
+_PutcharsDefault        0x080010ad   0x32  Code  Lc  xprintffull.o [3]
+_PutstrDefault          0x08000675  0x29a  Code  Lc  xprintffull.o [3]
+_TzoneStr               0x20000808    0x4  Data  Gb  setlocale.o [3]
+_Wctomb                 0x08003141   0x1a  Code  Gb  xwctomb.o [3]
+__aeabi_cdcmple         0x08002f5d         Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x08002f8d         Code  Gb  DblCmpGe.o [4]
+__aeabi_d2iz            0x08002c4d         Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x08002c79         Code  Gb  DblToI32.o [4]
+__aeabi_dadd            0x0800223d         Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x080014b5         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x08001a89         Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x08001c2d         Code  Gb  DblSub.o [4]
+__aeabi_i2d             0x08002fbd         Code  Gb  I32ToDbl.o [4]
+__aeabi_ldiv0           0x0800331d         Code  Gb  I64DivZer.o [4]
+__aeabi_ldivmod         0x08001f05         Code  Gb  I64DivMod.o [4]
+__aeabi_memcpy          0x08002b15         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4         0x08002b2f         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8         0x08002b2f         Code  Gb  ABImemcpy.o [4]
+__aeabi_ui2d            0x08002fd1         Code  Gb  I32ToDbl.o [4]
+__aeabi_uldivmod        0x08001f19         Code  Gb  I64DivMod.o [4]
+__call_dtors            0x08002bb1    0x2  Code  Gb  cppinit.o [3]
+__cmain                 0x08003175         Code  Gb  cmain.o [4]
+__cstart_call_dtors     0x0800325b         Code  Gb  cexit.o [4]
+__cxa_atexit            0x08002b85   0x2c  Code  Gb  cppinit.o [3]
+__cxa_finalize          0x08002bb3   0x36  Code  Gb  cppinit.o [3]
+__data_Aldata           0x20000b40    0x8  Data  Gb  xxmemxmalloc.o [3]
+__data_GetMemChunk      0x0800306d   0x28  Code  Gb  xgetmemchunk.o [3]
+__exit                  0x080031f5   0x14  Code  Gb  exit.o [5]
+__iar_Dnorm             0x080025ad   0xc6  Code  Gb  xdnorm.o [3]
+__iar_Dscale            0x08002035  0x108  Code  Gb  xdscale.o [3]
+__iar_Locksyslock       0x080029af   0x46  Code  Gb  xsyslock.o [3]
+__iar_Mbcurmax          0x080032c9    0xa  Code  Gb  xmbcurmax.o [3]
+__iar_Memchr            0x08002bf5         Code  Gb  memchr.o [4]
+__iar_Mtxdst            0x08002e27    0xe  Code  Gb  MtxWrapper.o [3]
+__iar_Mtxinit           0x08002e19    0xe  Code  Gb  MtxWrapper.o [3]
+__iar_Mtxlock           0x08002e35    0xe  Code  Gb  MtxWrapper.o [3]
+__iar_Mtxunlock         0x08002e43    0xe  Code  Gb  MtxWrapper.o [3]
+__iar_Stdout            0x200008b8   0x40  Data  Gb  xfiles.o [3]
+__iar_Strchr            0x0800318d         Code  Gb  strchr.o [4]
+__iar_Tls_setup__IsdstStr
+                        0x20000814    0x4  Data  Gb  setlocale.o [3]
+__iar_Tls_setup__Locale_Profile
+                        0x20000818    0x4  Data  Gb  setlocale.o [3]
+__iar_Tls_setup__Locale_lconv
+                        0x2000086c    0x4  Data  Gb  localeconv.o [3]
+__iar_Tls_setup__TzoneStr
+                        0x2000080c    0x4  Data  Gb  setlocale.o [3]
+__iar_Unlocksyslock     0x080029f5   0x14  Code  Gb  xsyslock.o [3]
+__iar_close_ttio        0x08002f2d   0x2e  Code  Gb  iarttio.o [5]
+__iar_d2uiz             0x08002c83         Code  Gb  DblToI32.o [4]
+__iar_dadd              0x0800224f         Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x08002fed   0x2c  Code  Gb  data_init3.o [4]
+__iar_dsub              0x08001c3f         Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x08001c51         Code  Gb  DblSub.o [4]
+__iar_lookup_ttioh      0x0800330d    0x8  Code  Gb  XShttio.o [3]
+__iar_packbits_init3    0x08002731   0xa8  Code  Gb  packbits_init3.o [4]
+__iar_program_start     0x080032bd         Code  Gb  cstartup_M.o [4]
+__iar_ttio_handles      0x20000938    0x8  Data  Lc  XShttio.o [3]
+__iar_ui2d              0x08002fd3         Code  Gb  I32ToDbl.o [4]
+__iar_zero_init3        0x08003095   0x24  Code  Gb  zero_init3.o [4]
+__low_level_init        0x080033ef    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32f10x_md.o [1]
+_call_main              0x08003181         Code  Gb  cmain.o [4]
+_exit                   0x08003259         Code  Gb  cexit.o [4]
+_main                   0x08003187         Code  Gb  cmain.o [4]
+add_timer               0x0800182f   0x40  Code  Lc  etimer.o [1]
+autostart_processes     0x08003274    0xc  Data  Gb  contiki-main.o [1]
+autostart_start         0x08002efd   0x2a  Code  Gb  autostart.o [1]
+blink_process           0x20000918   0x10  Data  Gb  processtest.o [1]
+call_process            0x080011c9   0x66  Code  Lc  process.o [1]
+clearlocks              0x08002989   0x26  Code  Lc  xsyslock.o [3]
+clock_init              0x080023bb   0x18  Code  Gb  clock.o [1]
+clock_time              0x080023d3    0x6  Code  Gb  clock.o [1]
+current_clock           0x20000b48    0x4  Data  Lc  clock.o [1]
+current_seconds         0x20000b4c    0x4  Data  Lc  clock.o [1]
+dbg_setup_uart_default  0x080023fd   0xb0  Code  Gb  debug-uart.o [1]
+div                     0x08003267    0xe  Code  Gb  div.o [3]
+do_event                0x08001279   0xc0  Code  Lc  process.o [1]
+do_poll                 0x0800124b   0x2e  Code  Lc  process.o [1]
+etimer_expired          0x08001881   0x10  Code  Gb  etimer.o [1]
+etimer_next_expiration_time
+                        0x080018a3   0x14  Code  Gb  etimer.o [1]
+etimer_pending          0x08001891   0x12  Code  Gb  etimer.o [1]
+etimer_process          0x200008f8   0x10  Data  Gb  etimer.o [1]
+etimer_request_poll     0x08001825    0xa  Code  Gb  etimer.o [1]
+etimer_set              0x0800186f   0x12  Code  Gb  etimer.o [1]
+event_data_ready        0x20000b8c    0x1  Data  Lc  process-post-isr-test.o [1]
+events                  0x2000094c  0x180  Data  Lc  process.o [1]
+exit                    0x08003315    0x6  Code  Gb  exit.o [3]
+exit_process            0x08001129   0xa0  Code  Lc  process.o [1]
+fevent                  0x20000b8f    0x1  Data  Lc  process.o [1]
+fputc                   0x080024ad   0x20  Code  Gb  debug-uart.o [1]
+free                    0x08002901   0x84  Code  Gb  xxmemxfree.o [3]
+idle_count              0x20000b50    0x4  Data  Gb  contiki-main.o [1]
+lastevent               0x20000b8d    0x1  Data  Lc  process.o [1]
+led_init                0x08002ad5   0x28  Code  Gb  contiki-main.o [1]
+localeconv              0x080031cd   0x10  Code  Gb  localeconv.o [3]
+main                    0x08002a95   0x40  Code  Gb  contiki-main.o [1]
+malloc                  0x08002675   0xb6  Code  Gb  xxmemxmalloc.o [3]
+memchr                  0x08002bf5         Code  Gb  memchr.o [4]
+mtx                     0x20000b20   0x10  Data  Lc  xsyslock.o [3]
+mtxdst                  0x20000b80    0x4  Data  Lc  MtxWrapper.o [3]
+mtxinit                 0x20000b7c    0x4  Data  Lc  MtxWrapper.o [3]
+mtxlock                 0x20000b84    0x4  Data  Lc  MtxWrapper.o [3]
+mtxunlock               0x20000b88    0x4  Data  Lc  MtxWrapper.o [3]
+nevents                 0x20000b8e    0x1  Data  Lc  process.o [1]
+next_abi_dtor_rec       0x20000b78    0x4  Data  Lc  cppinit.o [3]
+next_expiration         0x20000b58    0x4  Data  Lc  etimer.o [1]
+obuf                    0x20000acc   0x50  Data  Lc  xfiles.o [3]
+poll_requested          0x20000b90    0x1  Data  Lc  process.o [1]
+printf                  0x080030e5   0x20  Code  Gb  printf.o [3]
+process_current         0x20000b64    0x4  Data  Gb  process.o [1]
+process_init            0x0800122f   0x1c  Code  Gb  process.o [1]
+process_is_running      0x080014a5   0x10  Code  Gb  process.o [1]
+process_list            0x20000b60    0x4  Data  Gb  process.o [1]
+process_poll            0x08001433   0x1c  Code  Gb  process.o [1]
+process_post            0x08001357   0xca  Code  Gb  process.o [1]
+process_post_synch      0x08001421   0x12  Code  Gb  process.o [1]
+process_run             0x08001339   0x1e  Code  Gb  process.o [1]
+process_start           0x080010e1   0x48  Code  Gb  process.o [1]
+process_thread_blink_process
+                        0x080027d9   0x8a  Code  Lc  processtest.o [1]
+process_thread_etimer_process
+                        0x08001745   0xe0  Code  Lc  etimer.o [1]
+process_thread_receive_process
+                        0x08002875   0x46  Code  Lc  process-post-isr-test.o [1]
+putchar                 0x080032b1    0xc  Code  Gb  putchar.o [3]
+receive_process         0x20000908   0x10  Data  Gb  process-post-isr-test.o [1]
+second_countdown        0x20000940    0x4  Data  Lc  clock.o [1]
+strchr                  0x0800318d         Code  Gb  strchr.o [4]
+strlen                  0x08002e61         Code  Gb  strlen.o [4]
+syslock_o               0x20000b1c    0x4  Data  Lc  xsyslock.o [3]
+timer_expired           0x08003027   0x1e  Code  Gb  timer.o [1]
+timer_set               0x08003019    0xe  Code  Gb  timer.o [1]
+timerlist               0x20000b54    0x4  Data  Lc  etimer.o [1]
+update_time             0x080016fd   0x48  Code  Lc  etimer.o [1]
+
+
+[1] = E:\CODE\Contiki\Contiki_stm32\Contiki_stm32test\ContikiStm32_demoV1.1_test\Debug\Obj
+[2] = command line
+[3] = dl7M_tl_if.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  12 580 bytes of readonly  code memory
+     901 bytes of readonly  data memory
+   2 963 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
